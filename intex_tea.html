@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="neki_forms_.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon-32x32.png">
+<style>
+    body {
+        background-color: skyblue;
+    }
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    input[type=password]{
+        width: 100%;
+    background-color: #e7e5ed;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    }
+    
+    input[type=Reset] {
+    width: 100%;
+    background-color: #8b64ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    input[type=Submit] {
+        width: 100%;
+        background-color: #FF6464;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+    
+    input[type=submit]:hover {
+    background-color: #ff7b7b;
+    }
+    
+    div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+    p {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color:#FF6464;
+    }
+    .head-1
+    {
+    font-family: 'Caveat', cursive;
+    font-size: 110px;
+    color:#ff7b7b;
+    
+    }
+    </style>
+</head>
+<body>
+
+    <body>
+    
+    <h1 class="head-1"style="text-align:center">Kaddak</h1>
+    
+    <div>
+      <form action=""onsubmit="myFunction()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="aemail">Email Address</label>
+        <input type="text" id="aemail" name="email adress" placeholder="Your email address" required>
+        <label for="aphone">Phone Number</label>
+        <input type="text" id="aphone" name="phone number" placeholder="Your phone number" required>
+        <label for="country">Gender</label>
+        <select id="MGender" name="Gender">
+          <option value="Male" selected="selected">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <label for="country">country</label>
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="canada">Canada</option>
+          <option value="Nepal">UK</option>
+          <option value="Nepal">USA</option>
+          <option value="Nepal">Russia</option>
+          <option value="Nepal">Nepal</option>
+        </select>  
+        <input type="password" id="password_1" name=" password" placeholder="creat password" required>
+        <input type="password" id="password_2" name=" password" placeholder="confrum password" required>
+        <input type="Reset" value="Reset">
+
+        <input type="Submit" value="sinup">
+      </form>
+    </div>
+    <script>
+        function myFunction() {
+          alert("your action is submit");
+        }
+        </script>
+</body>
+</html>
